@@ -1,0 +1,489 @@
+.bg {
+    &-primary {
+        background-color: $primaryColor !important;
+    }
+
+    &-secondary {
+        background-color: $secondaryColor !important
+    }
+
+    &-primary-light {
+        background-color: $primaryColorLight;
+    }
+
+    &-third {
+        background-color: $thirdColor;
+    }
+
+    &-sixth {
+        background-color: $sixthColor;
+    }
+
+    &-seventh {
+        background-color: $seventhColor;
+    }
+
+    &-grey-3 {
+        background-color: $Grey3;
+    }
+
+    &-grey-7 {
+        background-color: $Grey7;
+    }
+
+    &-grey-8 {
+        background-color: $Grey8;
+    }
+
+    &-grey-9 {
+        background-color: $Grey9;
+    }
+
+    &-grey-10 {
+        background-color: $Grey10;
+    }
+}
+
+.text {
+    &-primary {
+        color: $primaryColor !important;
+    }
+
+    &-secondary {
+        color: $secondaryColor !important;
+    }
+
+    &-third {
+        color: $thirdColor;
+    }
+
+    &-fourth {
+        color: $fourthColor;
+    }
+
+    &-fifth {
+        color: $fifthColor;
+    }
+
+    &-sixth {
+        color: $sixthColor;
+    }
+
+    &-seventh {
+        color: $seventhColor;
+    }
+    &-eight {
+        color: $eightColor;
+    }
+
+    &-grey-1 {
+        color: $Grey1 !important;
+    }
+
+    &-grey-2 {
+        color: $Grey2 !important;
+    }
+
+    &-grey-3 {
+        color: $Grey3 !important;
+    }
+
+    &-grey-4 {
+        color: $Grey4
+    }
+
+    &-grey-5 {
+        color: $Grey5;
+    }
+
+    &-grey-6 {
+        color: $Grey6;
+    }
+
+    &-grey-7 {
+        color: $Grey7;
+    }
+
+    &-grey-8 {
+        color: $Grey8;
+    }
+
+    &-grey-9 {
+        color: $Grey9;
+    }
+
+    &-grey-10 {
+        color: $Grey10;
+    }
+
+    &-link {
+        &:hover {
+            text-decoration: underline !important;
+            color: $btnHoverColor !important;
+        }
+    }
+
+    &-decoration-underline {
+        text-decoration: underline;
+    }
+}
+
+a.text-link {
+    &:hover {
+        color: $btnHoverColor !important;
+    }
+}
+
+.rounded-10 {
+    border-radius: 10px;
+}
+
+.rounded {
+    &-20 {
+        border-radius: 20px;
+    }
+
+    &-t-20 {
+        border-radius: 20px 20px 0 0;
+    }
+
+    &-b-20 {
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+.rounded-circle-px {
+    border-radius: 50px;
+}
+
+.font {
+    &-helvetica {
+        font-family: $helveticaFont;
+    }
+
+    &-segoe {
+        font-family: $segoeFont;
+    }
+
+    &-tahome {
+        font-family: $tahomaFont;
+    }
+
+    &-sans {
+        font-family: $sansProFont;
+    }
+
+    &-inter {
+        font-family: $interFont
+    }
+
+    &-xs {
+        font-size: $fontXSSM;
+    }
+
+    &-sm {
+        font-size: $fontXSSM;
+        @include md {
+            font-size: $fontSM;
+        }
+    }
+
+    &-md {
+        font-size: $fontSM;
+        @include md {
+            font-size: $fontMD;
+        }
+    }
+
+    &-lg {
+        font-size: $fontMD;
+
+        @include md {
+            font-size: $fontLG;
+        }
+    }
+
+    &-20 {
+        font-size: $fontLG;
+        @include lg {
+            font-size: $font20;
+        }
+    }
+
+    &-xl {
+        font-size: $font20;
+        @include md {
+            font-size: $fontXL;
+        }
+    }
+
+    &-xxl {
+        font-size: $fontXL;
+        @include md {
+            font-size: $fontXXL;
+        }
+    }
+
+    &-30 {
+        font-size: $fontXXL;
+        @include md {
+            font-size: $font30;
+        }
+    }
+}
+
+.shadow {
+    &-primary {
+        box-shadow: $shadowPrimary;
+    }
+
+    &-secondary {
+        box-shadow: $shadowSecondary;
+    }
+
+    &-third {
+        box-shadow: $shadowThird;
+    }
+}
+
+.letter-spacing {
+    letter-spacing: 1px;
+}
+
+.p {
+    &x-g {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @include md {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        @include xl {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
+    &l-30 {
+        padding-left: 30px;
+    }
+
+    &r-30 {
+        padding-right: 30px;
+    }
+
+    &-30 {
+        padding: 30px;
+    }
+
+    &y-30 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &x-30 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    &b-30 {
+        padding-bottom: 30px;
+    }
+
+    &t-30 {
+        padding-top: 30px;
+    }
+
+    &l-20 {
+        padding-left: 20px;
+    }
+
+    &b-20 {
+        padding-bottom: 20px;
+    }
+
+    &r-20 {
+        padding-right: 20px;
+    }
+
+    &-20 {
+        padding: 20px;
+    }
+
+    &y-20 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &x-20 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &l-15 {
+        padding-left: 15px;
+    }
+
+    &r-15 {
+        padding-right: 15px;
+    }
+
+    &-15 {
+        padding: 15px;
+    }
+
+    &y-15 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    &x-15 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &x-10 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &y-10 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &t-15 {
+        padding-top: 15px;
+    }
+
+    &b-15 {
+        padding-bottom: 15px;
+    }
+}
+
+.m {
+    &l-30 {
+        margin-left: 30px;
+    }
+
+    &r-30 {
+        margin-right: 30px;
+    }
+
+    &y-30 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &x-30 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    &t-30 {
+        margin-top: 30px;
+    }
+
+    &b-30 {
+        margin-bottom: 30px;
+    }
+
+    &-30 {
+        margin: 30px;
+    }
+
+    &l-15 {
+        margin-left: 15px;
+    }
+
+    &r-15 {
+        margin-right: 15px;
+    }
+
+    &y-15 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    &x-15 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    &t-15 {
+        margin-top: 15px;
+    }
+
+    &b-15 {
+        margin-bottom: 15px;
+    }
+
+    &-15 {
+        margin: 15px;
+    }
+
+    &b-20 {
+        margin-bottom: 20px;
+    }
+
+    &t-20 {
+        margin-top: 20px;
+    }
+
+    &r-20 {
+        margin-right: 20px;
+    }
+
+    &x-20 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.section-margin-bottom {
+    margin-bottom: 30px;
+
+    @include md {
+        margin-bottom: 35px;
+    }
+
+    @include lg {
+        margin-bottom: 40px;
+    }
+}
+
+.spinner-hidden {
+    .wpcf7-spinner {
+        display: none;
+    }
+}
+
+.transition {
+    transition: all .3s;
+}
+
+.body-popup-overlay {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    max-width: 1600px;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    height: 100vh;
+    z-index: 2;
+}
+// Only use this class for input fields
+.no-zoom {
+    touch-action: manipulation;
+    &:focus {
+        font-size: 1rem;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

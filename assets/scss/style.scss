@@ -1,0 +1,247 @@
+/**
+******* Include external fonts *******
+**/
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/dva/wp-content/plugins/inventory/assets/fonts/Helvetica-Neue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('/dva/wp-content/plugins/inventory/assets/fonts/segoeui.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import './media';
+@import './vars';
+@import './normalize';
+@import './globals';
+
+/**
+******* Buttons Global Styling *******
+**/
+.btn {
+    padding: 12px 30px;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 0;
+    outline: 0;
+
+    &:hover {
+        background: $btnHoverColor;
+        color: $white;
+        border-color: $btnHoverColor;
+    }
+
+    &:focus {
+        box-shadow: unset;
+    }
+
+    &-primary {
+        background-color: $primaryColor;
+        border-color: $primaryColor;
+
+        &:focus {
+            background-color: $primaryColor;
+            border-color: $primaryColor;
+        }
+
+        &.disabled {
+            background-color: $primaryColor;
+            border-color: $primaryColor;
+            pointer-events: none;
+            opacity: .8;
+        }
+    }
+
+    &-secondary {
+        background-color: $secondaryColor;
+        border-color: $secondaryColor;
+
+        &:focus {
+            background-color: $secondaryColor;
+            border-color: $secondaryColor
+        }
+    }
+
+    &-grey-9 {
+        background-color: $Grey9;
+        border-color: $Grey9;
+
+        &:focus {
+            background-color: $Grey9;
+            border-color: $Grey9;
+        }
+
+        &:hover {
+            color: white !important;
+        }
+    }
+}
+
+.border-bottom-sidebar {
+    border-bottom: 2px solid $Grey2;
+}
+
+/**
+*******  Breadcrumbs Styling *******
+**/
+nav[aria-label="breadcrumbs"] {
+    font-family: $helveticaFont;
+}
+
+
+/**
+******* Inventory page sidebar Styling *******
+**/
+.inventory-filterbar input[type="search"] {
+    min-height: 50px;
+    border: 1.5px solid #c1c1c1;
+    padding: 0 12px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.inventory-layout-changer>span.active {
+    border: 1px solid $Grey3;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+#inventory-sort {
+    padding: 10px 35px 10px 10px;
+    appearance: none;
+    border: 1px solid $Grey3;
+    border-radius: 4px;
+    min-width: 200px;
+
+    &+span {
+        right: 10px;
+    }
+}
+
+
+// Vehicle card styling
+.vehicle-card-wrapper {
+    border: 2px solid $Grey2;
+}
+
+.vehicle-compare-box {
+    background-color: rgba(0, 0, 0, 0.5019607843);
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+}
+
+.recently-viewed-card {
+    background: #ffde00;
+    background: linear-gradient(180deg, #ffde00 0%, #e6cd26 100%);
+    letter-spacing: 1px;
+}
+.card-color-ball {
+    width: 25px;
+    height: 25px;
+    border: 1px solid $Grey2;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+}
+
+// Price and mileage range slider styling
+.range-filters {
+    appearance: none;
+    outline: none;
+}
+.range-slider {
+    height: 5px;
+    background-color: $Grey2;
+}
+.range-filters {
+    appearance: none;
+    outline: none;
+    pointer-events: none;
+}
+.range-filters::-webkit-slider-runnable-track {
+    appearance: none;
+    height: 5px;
+}
+.range-filters::-webkit-slider-thumb {
+    appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    background-color: $primaryColor;
+    cursor: pointer;
+    margin-top: -9px;
+    pointer-events: auto;
+    border-radius: 50%;
+}
+.range-highlight {
+    background-color: #B8091B;
+}
+.range-container {
+    min-height: 2.3rem;
+}
+
+.preloader-element {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 1000px 104px;
+    position: relative;
+    overflow: hidden;
+}
+.preloader-card {
+    border: 2px solid #D7D7D7;
+}
+.preloader-image {
+    height: 200px;
+}
+.preloader-title {
+    height: 50px;
+}
+.preloader-meta {
+    height: 1rem;
+}
+.preloader-cta {
+    height: 50px;
+    border-radius: 4px;
+}
+.preloader-badges {
+    height: 30px;
+}
+.preloader-color {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+}
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+
+// Selected inventory pill
+.selected-filter-pill {
+    background-color: #d9d9d9;
+    color: #7d7d7d;
+}
+.reset-filters {
+    border: 2px solid #7d7d7d;
+    color: #9f9f9f;
+    outline: none;
+}
+.no-listings-found {
+    border: 2px solid $primaryColor;
+}
+
+// Single listing page styling
+.vehicle-breadcrumbs a:hover {
+    text-decoration: underline;
+    color: #1f4a81 !important;
+}
